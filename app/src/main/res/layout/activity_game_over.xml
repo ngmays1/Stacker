@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context="com.example.b.stacker.GameOver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/GameOver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="52dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Game Over"
+            android:textColor="#ffffff"
+            android:textSize="52dp" />
+
+        <TextView
+            android:id="@+id/finalScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Score"
+            android:textColor="#ffffff"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter Name"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Score"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leaderboard"
+            />
+
+        <Button
+            android:id="@+id/Restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restart"
+            android:layout_below="@+id/highscore"
+            android:layout_weight="1"
+            android:onClick="onRestart"
+            />
+
+        <Button
+            android:id="@+id/Quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quit"
+            android:layout_below="@+id/restart"
+            android:layout_weight="1"
+            android:onClick="onQuit"/>
+
+    </LinearLayout>
+
+</LinearLayout>
